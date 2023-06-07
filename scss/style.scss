@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #d1a840;
+  --text-color: #0c0f26;
+  --body-color: #f9f9f9;
+}
+#navBar {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+#about-us {
+  padding: 3% 0;
+  text-align: center;
+  .about-us-text {
+    padding: 5% 10%;
+    text-align: left;
+  }
+  .about-us-photo {
+    padding: 5% 1%;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+}
+#achievementSection {
+  background-color: #0f1923; /* Dark Blue */
+  color: var(--body-color);
+  text-align: center;
+  padding: 5% 0;
+  .achievement {
+    padding: 10% 0;
+    p {
+      font-size: 2rem;
+    }
+    i {
+      font-size: 3rem;
+      color: var(--main-color);
+    }
+    .counter {
+      font-size: 3rem;
+    }
+  }
+}
+#meet-our-boss {
+  .temaHeading {
+    text-align: center;
+    color: var(--main-color);
+  }
+  padding: 5% 0;
+  .meet-our-boss-heading {
+    padding: 5% 0;
+  }
+  .meet-our-boss-photo {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 500px;
+    }
+  }
+}
+// Gally start
+#gallary {
+  text-align: center;
+  h2 {
+    padding: 5% 0;
+  }
+}
+#contact {
+  .map {
+    padding: 10% 0 3% 0;
+  }
+  
+}

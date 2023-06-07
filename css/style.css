@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #d1a840;
+  --text-color: #0c0f26;
+  --body-color: #f9f9f9;
+}
+
+#navBar {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about-us {
+  padding: 3% 0;
+  text-align: center;
+}
+#about-us .about-us-text {
+  padding: 5% 10%;
+  text-align: left;
+}
+#about-us .about-us-photo {
+  padding: 5% 1%;
+}
+#about-us .about-us-photo img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#achievementSection {
+  background-color: #0f1923; /* Dark Blue */
+  color: var(--body-color);
+  text-align: center;
+  padding: 5% 0;
+}
+#achievementSection .achievement {
+  padding: 10% 0;
+}
+#achievementSection .achievement p {
+  font-size: 2rem;
+}
+#achievementSection .achievement i {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+#achievementSection .achievement .counter {
+  font-size: 3rem;
+}
+
+#meet-our-boss {
+  padding: 5% 0;
+}
+#meet-our-boss .temaHeading {
+  text-align: center;
+  color: var(--main-color);
+}
+#meet-our-boss .meet-our-boss-heading {
+  padding: 5% 0;
+}
+#meet-our-boss .meet-our-boss-photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+#gallary {
+  text-align: center;
+}
+#gallary h2 {
+  padding: 5% 0;
+}
+
+#contact .map {
+  padding: 10% 0 3% 0;
+}
