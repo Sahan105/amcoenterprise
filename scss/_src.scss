@@ -1,0 +1,38 @@
+@import "./variable";
+#srs {
+  background-color: $body-color;
+  padding: 6% 0;
+  .header {
+    h1 {
+      font-size: 3rem;
+      color: $main-color;
+      text-align: center;
+      padding: 3% 0;
+      font-weight: 700;
+    }
+    padding: 3% 0;
+    .intro {
+      h2 {
+        color: $text-color;
+        font-size: 2rem;
+      }
+    }
+  }
+  .gallay-part {
+    .h2 {
+      text-align: center;
+      font-size: 2.1rem;
+      padding: 3% 0;
+      color: $main-color;
+    }
+    .card {
+      margin-top: 5%;
+      .zoomable-image {
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

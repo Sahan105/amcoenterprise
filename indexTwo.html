@@ -1,782 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    /> -->
+<div class="container">
+  <h1>Vertical Process Line</h1>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Amco Enterprise Limited</title>
-  </head>
-  <body>
-    <button class="brochure"><a href="#">Brochure</a></button>
-    <header id="navMenu" aria-label="navigation bar">
-      <div class="container">
-        <div class="navStart">
-          <a class="logo" href="/">
-            <img
-              src="/assets/images/logo.png"
-              width="35"
-              height="35"
-              alt="Inc Logo"
-            />
-          </a>
-        </div>
-        <div class="nav-end">
-          <div class="right-container">
-            <nav class="menu">
-              <ul class="menuBar">
-                <li>
-                  <button
-                    class="navLink dropdown-btn"
-                    data-dropdown="dropdown1"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    aria-label="browse"
-                  >
-                    Browse
-                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                  </button>
-                  <div id="dropdown1" class="dropdown">
-                    <ul role="menu">
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#best-of-the-day">
-                          <img src="./assets/icons/botd.svg" class="icon" />
-                          <div>
-                            <span class="dropdownLink-title"
-                              >Best of the day</span
-                            >
-                            <p>Shorts featured today by curators</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#featured-streams">
-                          <img src="./assets/icons/fs.svg" class="icon" />
-                          <div>
-                            <span class="dropdownLink-title"
-                              >Featured Streams</span
-                            >
-                            <p>Leading creatives livestreams</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#subscriptions">
-                          <img src="./assets/icons/sp.svg" class="icon" />
-                          <div>
-                            <span class="dropdownLink-title"
-                              >Subscriptions</span
-                            >
-                            <p>Gain exclusive access</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#creative-feed">
-                          <img src="./assets/icons/cf.svg" class="icon" />
-                          <div>
-                            <span class="dropdownLink-title"
-                              >Creative Feed</span
-                            >
-                            <p>See trending creations</p>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
+  <div class="process-line">
+    <div class="step" data-step="1">
+      <h3>Step 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
 
-                    <ul role="menu">
-                      <li class="dropdown-title">
-                        <span class="dropdownLink-title">Browse by apps</span>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#adobe-xd">
-                          <img src="./assets/icons/xd.svg" />
-                          Adobe XD
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#after-effect">
-                          <img src="./assets/icons/ae.svg" />
-                          After Effect
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#sketch">
-                          <img src="./assets/icons/sketch.svg" />
-                          Sketch
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#indesign">
-                          <img src="./assets/icons/indesign.svg" />
-                          Indesign
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#figma">
-                          <img src="./assets/icons/figma.svg" />
-                          Figma
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <button
-                    class="navLink dropdown-btn"
-                    data-dropdown="dropdown2"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    aria-label="discover"
-                  >
-                    Discover
-                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                  </button>
-                  <div id="dropdown2" class="dropdown">
-                    <ul role="menu">
-                      <li>
-                        <span class="dropdownLink-title"
-                          >Browse Categories</span
-                        >
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#branding">Branding</a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#illustrations"
-                          >Illustration</a
-                        >
-                      </li>
-                    </ul>
-                    <ul role="menu">
-                      <li>
-                        <span class="dropdownLink-title">Download App</span>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#mac-windows"
-                          >MacOS & Windows</a
-                        >
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdownLink" href="#linux">Linux</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a class="navLink" href="/">Jobs</a></li>
-                <li><a class="navLink" href="/">Livestream</a></li>
-                <li><a class="navLink" href="/">About</a></li>
-              </ul>
-            </nav>
-          </div>
+    <div class="step" data-step="2">
+      <h3>Step 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
 
-          <button
-            id="hamburger"
-            aria-label="hamburger"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i class="bx bx-menu" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-    </header>
+    <div class="step" data-step="3">
+      <h3>Step 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
 
-    <!-- <section id="banner">
-      <div class="banner-wrapper">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./image/1.jpg" alt="" /></div>
-            <div class="swiper-slide"><img src="./image/2.jpg" alt="" /></div>
-            <div class="swiper-slide"><img src="./image/3.jpg" alt="" /></div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <section id="about-us">
-      <div class="container">
-        <div class="about-us-header">
-          <p>who we are</p>
-          <h1>About us</h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-us-text">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
-                ea eum incidunt consectetur iste cupiditate itaque repudiandae?
-                Consequatur, et. Mollitia eligendi voluptas perspiciatis nisi
-                atque necessitatibus dolor excepturi suscipit saepe.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-                quibusdam, molestias assumenda porro adipisci eligendi
-                dignissimos fugiat eos iste sit ducimus consequatur reiciendis
-                doloribus. Expedita iure perspiciatis doloremque, totam tempora
-                eius voluptatem incidunt! Aperiam voluptatum veniam perferendis
-                maiores magnam soluta optio nemo, illo quisquam tempora
-                officiis, impedit natus, architecto vero?
-              </p>
-              <button class="btn btn-lg btn-danger">About us</button>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about-us-photo">
-              <picture>
-                <img src="./image/2.jpg" alt="" />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
- 
-    <section id="achievementSection">
-      <div class="container">
-        <h2>Achievements</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="achievement text-center">
-              <span class="counter" data-target="500">0</span>
-              <p><i class="fas fa-clipboard-check"></i> Completed Projects</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="achievement text-center">
-              <span class="counter" data-target="1000">0</span>
-              <p><i class="fas fa-smile"></i> Happy Clients</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="achievement text-center">
-              <span class="counter" data-target="50">0</span>
-              <p><i class="fas fa-trophy"></i> Awards Received</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="step" data-step="4">
+      <h3>Step 4</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
 
-    <section id="meet-our-boss">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="meet-our-boss-heading">
-              <h2>Meet Our Leaders</h2>
-              <p>
-                It takes dedicated, capable, and experienced leaders to ensure
-                MUNSHI stays a global leader in workforce service for many years
-                to come. We are confident we have the right team in place to
-                continue positive growth of the company
-              </p>
-              <button class="btn btn-warning btn-lg">Meet Our Team</button>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="meet-our-boss-photo">
-              <picture>
-                <img src="./image/4.jpg" alt="" />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <div class="contact-wrapper">
-          <div class="left">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.6943228756195!2d90.40307511498217!3d23.793897084567924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c70e67683109%3A0xe311af61fd1a504c!2s56%20Kamal%20Ataturk%20Ave%2C%20Dhaka%201212!5e0!3m2!1sen!2sbd!4v1685625601479!5m2!1sen!2sbd"
-              width="540"
-              height="470"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="right">
-            <form>
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your name.."
-              />
+    <div class="step" data-step="5">
+      <h3>Step 5</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
 
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name.."
-              />
+    <div class="step" data-step="6">
+      <h3>Step 6</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</div>
 
-              <label for="subject">Subject</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something.."
-                style="height: 200px"
-              ></textarea>
-
-              <input type="submit" value="Send Message" />
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="text-center text-lg-start bg-light text-muted">
-      <!-- Section: Social media -->
-    <!-- <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
-     
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-    
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-  
-      </section>
-  
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-  
-          <div class="row mt-3">
-     
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-       
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
-            </div>
-     
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-        
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" class="text-reset">Angular</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Vue</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Laravel</a>
-              </p>
-            </div>
-        
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-        
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" class="text-reset">Pricing</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Settings</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Orders</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">Help</a>
-              </p>
-            </div>
-          
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-           
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-            </div>
-       
-          </div>
- 
-        </div>
-      </section>
-
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
-      </div>
-
-    </footer>  -->
-
-    <script src="./js/main.js"></script>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script>
-  </body>
-</html>
 <!-- 
-
-
-/* style.css */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-
-:root {
-  --dark-grey: #333333;
-  --medium-grey: #636363;
-  --light-grey: #eeeeee;
-  --ash: #f4f4f4;
-  --primary-color: #2b72fb;
-  --white: white;
-  --border: 1px solid var(--light-grey);
-  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-body {
-  font-family: inherit;
-  background-color: var(--white);
-  color: var(--dark-grey);
-  letter-spacing: -0.4px;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: inherit;
-}
-
-.btn {
-  display: block;
-  background-color: var(--primary-color);
-  color: var(--white);
-  text-align: center;
-  padding: 0.6rem 1.4rem;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 5px;
-}
-
-.icon {
-  padding: 0.5rem;
-  background-color: var(--light-grey);
-  border-radius: 10px;
-}
-
-.logo {
-  margin-right: 1.5rem;
-}
-
-#navMenu {
-  border-bottom: var(--border);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 2rem;
-  height: 90px;
-  padding: 1.2rem 3rem;
-}
-
-.menu {
+.process-line {
   position: relative;
-  background: var(--white);
-}
-
-.menuBar li:first-child .dropdown {
-  flex-direction: initial;
-  min-width: 480px;
-}
-
-.menuBar li:first-child ul:nth-child(1) {
-  border-right: var(--border);
-}
-
-.menuBar li:nth-child(n + 2) ul:nth-child(1) {
-  border-bottom: var(--border);
-}
-
-.menuBar .dropdownLink-title {
-  font-weight: 600;
-}
-
-.menuBar .navLink {
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: -0.6px;
-  padding: 0.3rem;
-  min-width: 60px;
-  margin: 0 0.6rem;
-}
-
-.menuBar .navLink:hover,
-.dropdownLink:hover {
-  color: var(--primary-color);
-}
-
-.navStart,
-.nav-end,
-.menuBar,
-.right-container,
-.right-container .search {
-  display: flex;
-  align-items: center;
-}
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  min-width: 230px;
-  background-color: var(--white);
-  border-radius: 10px;
-  position: absolute;
-  top: 36px;
-  z-index: 1;
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(0.97) translateX(-5px);
-  transition: 0.1s ease-in-out;
-  box-shadow: var(--shadow);
-}
-
-.dropdown.active {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1) translateX(5px);
-}
-
-.dropdown ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.2rem;
-  font-size: 0.95rem;
-}
-
-.dropdown-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.15rem;
-}
-
-.dropdownLink {
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.5rem 0;
-  border-radius: 7px;
-  transition: 0.1s ease-in-out;
-}
-
-.dropdownLink p {
-  font-size: 0.8rem;
-  color: var(--medium-grey);
-}
-
-.right-container {
-  display: flex;
-  align-items: center;
-  column-gap: 1rem;
-}
-
-.right-container .search {
-  position: relative;
-}
-
-.right-container img {
-  border-radius: 50%;
-}
-
-.search input {
-  background-color: var(--ash);
-  border: none;
-  border-radius: 6px;
-  padding: 0.7rem;
-  padding-left: 2.4rem;
-  font-size: 16px;
-  width: 100%;
-  border: var(--border);
-}
-
-.search .bx-search {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  font-size: 1.3rem;
-  transform: translateY(-50%);
-  opacity: 0.6;
-}
-
-#hamburger {
-  display: none;
-  padding: 0.1rem;
-  margin-left: 1rem;
-  font-size: 1.9rem;
-}
-
-@media (max-width: 1100px) {
-  #hamburger {
-    display: block;
-  }
-
-  .container {
-    padding: 1.2rem;
-  }
-
-  .menu {
-    display: none;
+  padding-left: 50%;
+  &::before {
+    content: "";
     position: absolute;
-    top: 87px;
-    left: 0;
-    min-height: 100vh;
-    width: 100vw;
-  }
-
-  .menuBar li:first-child ul:nth-child(1) {
-    border-right: none;
-    border-bottom: var(--border);
-  }
-
-  .dropdown {
-    display: none;
-    min-width: 100%;
-    border: none !important;
-    border-radius: 5px;
-    position: static;
     top: 0;
-    left: 0;
-    visibility: visible;
-    opacity: 1;
-    transform: none;
-    box-shadow: none;
+    left: 45%;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
   }
-
-  .menu.show,
-  .dropdown.active {
-    display: block;
-  }
-
-  .dropdown ul {
-    padding-left: 0.3rem;
-  }
-
-  .menuBar {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    row-gap: 1rem;
-    padding: 1rem;
-  }
-
-  .menuBar .navLink {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .menuBar > li:not(:last-child) {
-    padding-bottom: 0.5rem;
-    border-bottom: var(--border);
+  .step {
+    position: relative;
+    margin-bottom: 100px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:before {
+      content: attr(data-step);
+      position: absolute;
+      top: -25px;
+      left: -35px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #000;
+      color: #fff;
+    }
   }
 }
-
-@media (max-width: 600px) {
-  .right-container {
-    display: none;
+@media (max-width: 576px) {
+  .process-line {
+    padding-left: 15px;
   }
-}
 
+  .process-line:before {
+    left: 7px;
+  }
 
-
-
-
- -->
+  .process-line .step:before {
+    top: -20px;
+    left: -25px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+  }
+} -->

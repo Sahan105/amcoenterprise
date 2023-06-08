@@ -1,13 +1,203 @@
+#srs {
+  background-color: #e6e6e6;
+  padding: 6% 0;
+}
+#srs .header {
+  padding: 3% 0;
+}
+#srs .header h1 {
+  font-size: 3rem;
+  color: #d1a840;
+  text-align: center;
+  padding: 3% 0;
+  font-weight: 700;
+}
+#srs .header .intro h2 {
+  color: #0c0f26;
+  font-size: 2rem;
+}
+#srs .gallay-part .h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  padding: 3% 0;
+  color: #d1a840;
+}
+#srs .gallay-part .card {
+  margin-top: 5%;
+}
+#srs .gallay-part .card .zoomable-image {
+  transition: transform 0.3s ease;
+}
+#srs .gallay-part .card .zoomable-image:hover {
+  transform: scale(1.1);
+}
+
+.wrapper {
+  padding: 10% 0;
+}
+.wrapper .heading {
+  text-align: center;
+  padding: 2% 0;
+}
+.wrapper .process-line {
+  position: relative;
+  padding-left: 10%;
+}
+.wrapper .process-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+.wrapper .process-line .oneBox {
+  position: relative;
+  width: 80%;
+  border: 1px solid #eee;
+  box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+  margin: 2% 0 5% 0;
+}
+.wrapper .process-line .oneBox i {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  align-self: center;
+  color: #d1a840;
+}
+.wrapper .process-line .oneBox p {
+  padding: 5%;
+  margin-top: 15%;
+}
+.wrapper .process-line .oneImg {
+  position: relative;
+}
+.wrapper .process-line .oneImg::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -92px;
+  background-color: #d1a840;
+  color: #fff;
+  border-radius: 50%;
+}
+.wrapper .process-line .oneImg .imageOne {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.wrapper .process-line .twoBox {
+  position: relative;
+  margin: 20% 0;
+  width: 80%;
+  border: 1px solid #eee;
+  box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+}
+.wrapper .process-line .twoBox i {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  align-self: center;
+  color: #d1a840;
+}
+.wrapper .process-line .twoBox p {
+  margin-top: 15%;
+  padding: 5%;
+}
+.wrapper .process-line .twoImg {
+  margin: 19% 0;
+  position: relative;
+}
+.wrapper .process-line .twoImg::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 38px;
+  background-color: #d1a840;
+  color: #fff;
+  border-radius: 50%;
+}
+.wrapper .process-line .twoImg .imageTwo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 17%;
+}
+.wrapper .process-line .threeBox {
+  position: relative;
+  margin: 30% 0;
+  width: 80%;
+  border: 1px solid #eee;
+  box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+}
+.wrapper .process-line .threeBox i {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  align-self: center;
+  color: #d1a840;
+}
+.wrapper .process-line .threeBox p {
+  margin-top: 15%;
+  padding: 5%;
+}
+.wrapper .process-line .threeImg {
+  margin: 27% 0;
+  position: relative;
+}
+.wrapper .process-line .threeImg::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -91px;
+  background-color: #d1a840;
+  color: #fff;
+  border-radius: 50%;
+}
+.wrapper .process-line .threeImg .imageThree {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 2%;
+}
+@media (max-width: 576px) {
+  .wrapper .process-line {
+    padding-left: 15px;
+  }
+  .wrapper .process-line:before {
+    left: 7px;
+  }
+  .wrapper .process-line .step:before {
+    top: -20px;
+    left: -25px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --main-color: #d1a840;
-  --text-color: #0c0f26;
-  --body-color: #f9f9f9;
 }
 
 #navBar {
@@ -56,7 +246,7 @@
 
 #achievementSection {
   background-color: #0f1923; /* Dark Blue */
-  color: var(--body-color);
+  color: #e6e6e6;
   text-align: center;
   padding: 5% 0;
 }
@@ -68,7 +258,7 @@
 }
 #achievementSection .achievement i {
   font-size: 3rem;
-  color: var(--main-color);
+  color: #d1a840;
 }
 #achievementSection .achievement .counter {
   font-size: 3rem;
@@ -79,7 +269,7 @@
 }
 #meet-our-boss .temaHeading {
   text-align: center;
-  color: var(--main-color);
+  color: #d1a840;
 }
 #meet-our-boss .meet-our-boss-heading {
   padding: 5% 0;
@@ -96,6 +286,12 @@
 }
 #gallary h2 {
   padding: 5% 0;
+}
+#gallary .zoomable-image {
+  transition: transform 0.3s ease;
+}
+#gallary .zoomable-image:hover {
+  transform: scale(1.2);
 }
 
 #contact .map {

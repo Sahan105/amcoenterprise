@@ -1,13 +1,12 @@
+@import "./_src.scss";
+@import "./recrutpro";
+@import "./variable.scss";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-:root {
-  --main-color: #d1a840;
-  --text-color: #0c0f26;
-  --body-color: #f9f9f9;
-}
+
 #navBar {
   position: absolute;
   width: 100%;
@@ -49,7 +48,7 @@
 }
 #achievementSection {
   background-color: #0f1923; /* Dark Blue */
-  color: var(--body-color);
+  color: $body-color;
   text-align: center;
   padding: 5% 0;
   .achievement {
@@ -59,7 +58,7 @@
     }
     i {
       font-size: 3rem;
-      color: var(--main-color);
+      color: $main-color;
     }
     .counter {
       font-size: 3rem;
@@ -69,7 +68,7 @@
 #meet-our-boss {
   .temaHeading {
     text-align: center;
-    color: var(--main-color);
+    color: $main-color;
   }
   padding: 5% 0;
   .meet-our-boss-heading {
@@ -89,10 +88,15 @@
   h2 {
     padding: 5% 0;
   }
+  .zoomable-image {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 #contact {
   .map {
     padding: 10% 0 3% 0;
   }
-  
 }
