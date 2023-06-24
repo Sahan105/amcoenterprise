@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +30,14 @@
     <title>Amco Enterprise Limited</title>
   </head>
   <body>
-    <!-- <button class="brochure"><a href="#">Brochure</a></button> -->
+    <div class="brochure">
+      <i class="fa-solid fa-list brochure-icon"></i>
+      <a href="#" class="text-decoration-none text-reset brochure-btn"
+        >Brochure</a
+      >
+    </div>
+
+    <!-- -->
 
     <!-- navbar start -->
     <section id="navBar">
@@ -130,6 +143,71 @@
               <picture>
                 <img src="./image/2.jpg" alt="" />
               </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="why-us">
+      <div class="container">
+        <div class="why-us-wrapper">
+          <h2 class="why-us-heading">Why Us</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="box">
+                <p>Timely Developments</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box">
+                <p>Recomandation</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box">
+                <p>Award</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service">
+      <div class="container">
+        <div class="service-wrapper">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Our service in Industrial Sector</h2>
+              <div class="left">
+                <div class="box">
+                  <i class="fa-sharp fa-solid fa-person-digging icon"></i>
+                  <p class="p">Construction</p>
+                </div>
+                <div class="box">
+                  <i class="fa-solid fa-circle-notch icon"></i>
+                  <p class="p">Operation & Maintenance</p>
+                </div>
+                <div class="box">
+                  <i class="fa-solid fa-gas-pump icon"></i>
+                  <p class="p">Oil & Gas</p>
+                </div>
+                <div class="box">
+                  <i class="fa-solid fa-truck-arrow-right icon"></i>
+                  <p class="p">Transport</p>
+                </div>
+                <div class="box">
+                  <i class="fa-brands fa-hire-a-helper icon"></i>
+                  <p class="p">Hospitality</p>
+                </div>
+              </div>
+              <button class="btn btn-lg btn-warning">Learn more</button>
+              <!-- End Box Services -->
+              <!-- End Container -->
+            </div>
+            <div class="col-lg-6">
+              <div class="right">
+                <img src="https://fakeimg.pl/500x500" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -245,6 +323,7 @@
 
     <section id="contact">
       <div class="container">
+        <h1 class="mb-3">Contact Us</h1>
         <div class="row">
           <div class="col-lg-6">
             <div class="map">
@@ -259,42 +338,128 @@
               ></iframe>
             </div>
           </div>
-          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
+            <div class="form-wrapper">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="your-name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="your-name"
+                      name="your-name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="your-email" class="form-label"
+                      >Your Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="your-email"
+                      name="your-email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="your-message" class="form-label text-start"
+                      >Your Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="your-message"
+                      name="your-message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button
+                          data-res="<?php echo $sum; ?>"
+                          type="submit"
+                          class="btn btn-dark w-100 fw-bold"
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <footer class="text-center text-lg-start bg-light text-muted">
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </section>
-
-      <section class="">
+    <section id="clients">
+      <div class="container">
+        <ul class="logogrid list-unstyled d-grid gap-4">
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg"
+              class="logogrid__img"
+              alt="Coca Cola"
+            />
+          </li>
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+              class="logogrid__img"
+              alt="Google"
+            />
+          </li>
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg"
+              class="logogrid__img"
+              alt="AirBnB"
+            />
+          </li>
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg"
+              class="logogrid__img"
+              alt="Spotify"
+            />
+          </li>
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/de/f/f9/Guinness_Logo.svg"
+              class="logogrid__img"
+              alt="Guinness"
+            />
+          </li>
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg"
+              class="logogrid__img"
+              alt="Audi"
+            />
+          </li>
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg"
+              class="logogrid__img"
+              alt="Nike"
+            />
+          </li>
+          <li class="logogrid__item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+              class="logogrid__img"
+              alt="Netflix"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="footer">
+      <footer class="text-center text-lg-start bg-light">
         <div class="container text-center text-md-start mt-5">
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -311,32 +476,34 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href="#!" class="text-reset">Angular</a>
+                <a href="#" class="text-reset text-decoration-none">Angular</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">React</a>
+                <a href="#" class="text-reset text-decoration-none">React</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Vue</a>
+                <a href="#" class="text-reset text-decoration-none">Vue</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Laravel</a>
+                <a href="#" class="text-reset text-decoration-none">Laravel</a>
               </p>
             </div>
 
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
-                <a href="#!" class="text-reset">Pricing</a>
+                <a href="#!" class="text-reset text-decoration-none">Pricing</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Settings</a>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Settings</a
+                >
               </p>
               <p>
-                <a href="#!" class="text-reset">Orders</a>
+                <a href="#!" class="text-reset text-decoration-none">Orders</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Help</a>
+                <a href="#!" class="text-reset text-decoration-none">Help</a>
               </p>
             </div>
 
@@ -352,18 +519,20 @@
             </div>
           </div>
         </div>
-      </section>
 
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        © 2023 Copyright:
-        <a class="text-reset fw-bold" href="https://amcoenterprise.com/"
-          >Amco Enterprise Ltd</a
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
         >
-      </div>
-    </footer>
+          © 2023 Copyright:
+          <a
+            class="text-reset fw-bold text-decoration-none"
+            href="https://amcoenterprise.com/"
+            >Amco Enterprise Ltd</a
+          >
+        </div>
+      </footer>
+    </section>
 
     <script src="./js/main.js"></script>
 

@@ -1,3 +1,4 @@
+//schrollig counter start
 let countersStarted = false;
 window.addEventListener("scroll", startCountersOnScroll);
 function startCountersOnScroll() {
@@ -6,7 +7,6 @@ function startCountersOnScroll() {
   const windowHeight = window.innerHeight;
   const achievementSectionPosition =
     achievementSection.getBoundingClientRect().top;
-
   if (achievementSectionPosition < windowHeight && !countersStarted) {
     startCounterAnimations(counters);
     countersStarted = true;
@@ -30,5 +30,28 @@ function startCounterAnimations(counters) {
     }, 10); // Adjust the interval duration as needed
   }
 }
+//schrolinng counter end
+// fillter tab
 
-// Gallary js start
+const btns = document.querySelectorAll(".tab-btn");
+const trades = document.querySelectorAll(".trade-details");
+
+for (i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", (e) => {
+    e.preventDefault();
+    const filter = e.target.dataset.filter;
+    trades.forEach((trade) => {
+      console.log(trade);
+      if (filter === "all") {
+        trade.style.display = "grid";
+      } else {
+        if (trade.classList.contains(filter)) {
+          trade.style.display = "block";
+        } else {
+          trade.style.display = "none";
+        }
+      }
+    });
+  });
+}
+// Example starter JavaScript for disabling form submissions if there are invalid fields

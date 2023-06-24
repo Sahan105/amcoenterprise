@@ -1,0 +1,164 @@
+@import "./variable.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+#aboutus {
+  padding: 5% 0;
+  .director {
+    .name-speach {
+      text-align: left;
+    }
+    .photo {
+      margin-top: 5%;
+      .d-photo {
+        object-fit: cover;
+      }
+    }
+  }
+  .whole-team {
+    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+    .paralax-photo {
+      width: 100%;
+      height: 100%;
+      background-image: url(../image/team.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      color: #fff;
+      background-color: rgba(224, 206, 206, 0.2);
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight: 700;
+        font-size: 4rem;
+      }
+    }
+  }
+
+  #cheif {
+    background-color: #eee;
+    padding-bottom: 3%;
+
+    .cheif-h {
+      padding-top: 2%;
+      padding-bottom: 7%;
+      text-align: center;
+      font-size: 3.5rem;
+    }
+
+    .box {
+      font-family: "Raleway", sans-serif;
+      position: relative;
+
+      &:before {
+        content: "";
+        background: rgba(209, 168, 64, 0.8);
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transform: rotate(-180deg);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.1s ease 0s;
+      }
+
+      &:hover:before {
+        opacity: 1;
+        transform: rotate(0);
+        transition: all 1s ease 0s;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .box-content {
+        text-align: center;
+        width: 80%;
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: opacity 0.1s ease 0s, transform 0.1s ease 0s;
+      }
+
+      &:hover .box-content {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%) rotate(0);
+        transition: all 0.1s ease 0s;
+      }
+
+      .title {
+        color: #111;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        margin: 0 0 5px;
+        font-family: "Courgette", cursive;
+      }
+
+      .post {
+        color: #272727;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 0 0 10px;
+        display: block;
+      }
+
+      .icon {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          margin: 0 4px;
+          display: inline-block;
+
+          a {
+            color: #111;
+            font-size: 23px;
+            text-align: center;
+            line-height: 27px;
+            height: 27px;
+            width: 27px;
+            border: 1px solid #111;
+            display: block;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+              color: #fff;
+              background: #111;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 990px) {
+      .box {
+        margin: 0 0 30px;
+      }
+    }
+  }
+}
