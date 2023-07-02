@@ -17,145 +17,146 @@
       height: 100%;
       background-color: $body-color;
     }
-    .oneBox {
-      position: relative;
-      width: 80%;
-      border: 1px solid #eee;
-      -webkit-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      margin: 2% 0 5% 0;
-      i {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3rem;
-        align-self: center;
-        color: $main-color;
-      }
-      p {
-        // padding: 0 3% 3% 3%;
-        margin-top: 12%;
-      }
+
+    //line end
+  }
+  .oneBox {
+    position: relative;
+    width: 50%;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    margin: 2% 0 5% 0;
+    i {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3rem;
+      align-self: center;
+      color: $main-color;
     }
-    .oneImg {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        top: 0;
-        left: -92px;
-        background-color: $main-color;
-        color: #fff;
-        border-radius: 50%;
-      }
-      .imageOne {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-    }
-    .twoBox {
-      position: relative;
-      margin: 20% 0;
-      width: 80%;
-      border: 1px solid #eee;
-      -webkit-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      i {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3rem;
-        align-self: center;
-        color: $main-color;
-      }
-      p {
-        margin-top: 10%;
-        padding: 0 3% 3% 3%;
-      }
-    }
-    .twoImg {
-      margin: 19% 0;
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        top: 0;
-        right: 38px;
-        background-color: $main-color;
-        color: #fff;
-        border-radius: 50%;
-      }
-      .imageTwo {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        object-fit: cover;
-        position: absolute;
-        left: 17%;
-      }
-    }
-    .threeBox {
-      position: relative;
-      .threeHeading {
-        position: absolute;
-        text-align: center;
-        left: 48%;
-      }
-      position: relative;
-      margin: 20% 0;
-      padding: 2% 0 0 0;
-      width: 80%;
-      border: 1px solid #eee;
-      -webkit-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
-      i {
-        position: absolute;
-        left: 50%;
-        top: 30%;
-        transform: translateX(-50%);
-        font-size: 3rem;
-        align-self: center;
-        color: $main-color;
-      }
-      p {
-        margin-top: 28%;
-        padding: 0 3% 1% 3%;
-      }
-    }
-    .threeImg {
-      margin: 19% 0;
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        top: 0;
-        left: -91px;
-        background-color: $main-color;
-        color: #fff;
-        border-radius: 50%;
-      }
-      .imageThree {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        object-fit: cover;
-        position: absolute;
-        left: 2%;
-      }
+    p {
+      // padding: 0 3% 3% 3%;
+      margin-top: 12%;
     }
   }
-
+  .oneImg {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: -92px;
+      background-color: $main-color;
+      color: #fff;
+      border-radius: 50%;
+    }
+    .imageOne {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .twoBox {
+    position: relative;
+    margin: 20% 0;
+    width: 80%;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    i {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3rem;
+      align-self: center;
+      color: $main-color;
+    }
+    p {
+      margin-top: 10%;
+      padding: 0 3% 3% 3%;
+    }
+  }
+  .twoImg {
+    margin: 19% 0;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      right: 38px;
+      background-color: $main-color;
+      color: #fff;
+      border-radius: 50%;
+    }
+    .imageTwo {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      left: 17%;
+    }
+  }
+  .threeBox {
+    position: relative;
+    .threeHeading {
+      position: absolute;
+      text-align: center;
+      left: 48%;
+    }
+    position: relative;
+    margin: 20% 0;
+    padding: 2% 0 0 0;
+    width: 80%;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
+    i {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translateX(-50%);
+      font-size: 3rem;
+      align-self: center;
+      color: $main-color;
+    }
+    p {
+      margin-top: 28%;
+      padding: 0 3% 1% 3%;
+    }
+  }
+  .threeImg {
+    margin: 19% 0;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: -91px;
+      background-color: $main-color;
+      color: #fff;
+      border-radius: 50%;
+    }
+    .imageThree {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      left: 2%;
+    }
+  }
   @media (max-width: 576px) {
     .process-line {
       padding-left: 15px;

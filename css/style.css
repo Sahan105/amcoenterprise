@@ -52,14 +52,14 @@
   height: 100%;
   background-color: #e6e6e6;
 }
-.wrapper .process-line .oneBox {
+.wrapper .oneBox {
   position: relative;
-  width: 80%;
+  width: 50%;
   border: 1px solid #eee;
   box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
   margin: 2% 0 5% 0;
 }
-.wrapper .process-line .oneBox i {
+.wrapper .oneBox i {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -67,13 +67,13 @@
   align-self: center;
   color: #d1a840;
 }
-.wrapper .process-line .oneBox p {
+.wrapper .oneBox p {
   margin-top: 12%;
 }
-.wrapper .process-line .oneImg {
+.wrapper .oneImg {
   position: relative;
 }
-.wrapper .process-line .oneImg::after {
+.wrapper .oneImg::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -84,21 +84,21 @@
   color: #fff;
   border-radius: 50%;
 }
-.wrapper .process-line .oneImg .imageOne {
+.wrapper .oneImg .imageOne {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
 }
-.wrapper .process-line .twoBox {
+.wrapper .twoBox {
   position: relative;
   margin: 20% 0;
   width: 80%;
   border: 1px solid #eee;
   box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
 }
-.wrapper .process-line .twoBox i {
+.wrapper .twoBox i {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -106,15 +106,15 @@
   align-self: center;
   color: #d1a840;
 }
-.wrapper .process-line .twoBox p {
+.wrapper .twoBox p {
   margin-top: 10%;
   padding: 0 3% 3% 3%;
 }
-.wrapper .process-line .twoImg {
+.wrapper .twoImg {
   margin: 19% 0;
   position: relative;
 }
-.wrapper .process-line .twoImg::after {
+.wrapper .twoImg::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -125,7 +125,7 @@
   color: #fff;
   border-radius: 50%;
 }
-.wrapper .process-line .twoImg .imageTwo {
+.wrapper .twoImg .imageTwo {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -134,7 +134,7 @@
   position: absolute;
   left: 17%;
 }
-.wrapper .process-line .threeBox {
+.wrapper .threeBox {
   position: relative;
   position: relative;
   margin: 20% 0;
@@ -143,12 +143,12 @@
   border: 1px solid #eee;
   box-shadow: 0px -1px 23px -4px rgba(0, 0, 0, 0.75);
 }
-.wrapper .process-line .threeBox .threeHeading {
+.wrapper .threeBox .threeHeading {
   position: absolute;
   text-align: center;
   left: 48%;
 }
-.wrapper .process-line .threeBox i {
+.wrapper .threeBox i {
   position: absolute;
   left: 50%;
   top: 30%;
@@ -157,15 +157,15 @@
   align-self: center;
   color: #d1a840;
 }
-.wrapper .process-line .threeBox p {
+.wrapper .threeBox p {
   margin-top: 28%;
   padding: 0 3% 1% 3%;
 }
-.wrapper .process-line .threeImg {
+.wrapper .threeImg {
   margin: 19% 0;
   position: relative;
 }
-.wrapper .process-line .threeImg::after {
+.wrapper .threeImg::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -176,7 +176,7 @@
   color: #fff;
   border-radius: 50%;
 }
-.wrapper .process-line .threeImg .imageThree {
+.wrapper .threeImg .imageThree {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -392,27 +392,66 @@
   box-sizing: border-box;
 }
 
+#recrutment {
+  position: relative;
+}
+#recrutment .work_process {
+  position: relative;
+  margin: 5% 0;
+}
+#recrutment .work_process::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  margin-right: 10px;
+  top: 0;
+  right: 50%;
+  width: 2px;
+  background-color: red;
+}
+#recrutment .work_process .work_box .work_detail_left {
+  margin-left: 10%;
+}
+#recrutment .work_process .work_box .work_detail_left .work_number .one {
+  text-align: center;
+  margin-left: -45%;
+}
+#recrutment .work_process .work_box .work_detail_left .first {
+  height: 350px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#recrutment .work_process .work_box .work_right::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  left: 627px;
+  width: 20px;
+  box-shadow: 0 0 0 1px #e6e6e6;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-color: #d1a840;
+  z-index: 1;
+}
+#recrutment .work_process .work_box .work_right .one_second {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 li,
 ol {
   list-style-type: none;
-}
-
-.brochure {
-  position: fixed;
-  z-index: 111;
-  top: 40%;
-  right: 0;
-  transform: translateY(-50%);
-  display: inline-block;
-  background-color: #d1a840;
-  color: #0c0f26;
-}
-.brochure .brochure-btn {
-  padding: 5px 5px 5px 21px;
-}
-.brochure .brochure-icon {
-  position: absolute;
-  top: 4px;
 }
 
 #navBar {
@@ -442,21 +481,75 @@ ol {
 }
 
 #about-us {
-  padding: 3% 0;
+  padding: 5% 0;
+  height: 100%;
   text-align: center;
 }
 #about-us .about-us-text {
-  padding: 5% 10%;
+  padding: 10% 3%;
+  font-size: 0.875rem;
   text-align: left;
 }
-#about-us .about-us-photo {
-  padding: 5% 1%;
+#about-us .about-us-text .trifecta_text {
+  font-size: 1.8rem;
 }
-#about-us .about-us-photo img {
-  width: 100%;
-  height: 500px;
+#about-us .about-us-text .trifecta_text .trifecta {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d1a840;
+}
+#about-us .about-us-text .about_us_btn {
+  background-color: #d1a840;
+  color: #e6e6e6;
+  font-weight: 600;
+}
+#about-us .about-us-photo {
+  position: relative;
+  margin-left: -3%;
+  height: 100%;
+}
+#about-us .about-us-photo .front {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  border: 10px solid #d1a840;
+  border-radius: 50%;
+  z-index: 11;
+}
+#about-us .about-us-photo .front .front_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#about-us .about-us-photo .middle {
+  position: absolute;
+  top: 3%;
+  left: 30%;
+  border: 10px solid #d1a840;
+  border-radius: 50%;
+}
+#about-us .about-us-photo .middle .middle_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#about-us .about-us-photo .behind {
+  position: absolute;
+  top: 44%;
+  left: 10%;
+  border: 10px solid #d1a840;
+  border-radius: 50%;
+}
+#about-us .about-us-photo .behind .behind_img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 
 #why-us {

@@ -3,6 +3,7 @@
 @import "./variable.scss";
 @import "./service.scss";
 @import "./aboutus.scss";
+@import "./recrutano.scss";
 * {
   padding: 0;
   margin: 0;
@@ -12,23 +13,7 @@ li,
 ol {
   list-style-type: none;
 }
-.brochure {
-  position: fixed;
-  z-index: 111;
-  top: 40%;
-  right: 0;
-  transform: translateY(-50%);
-  display: inline-block;
-  background-color: $main-color;
-  color: $text-color;
-  .brochure-btn {
-    padding: 5px 5px 5px 21px;
-  }
-  .brochure-icon {
-    position: absolute;
-    top: 4px;
-  }
-}
+
 #navBar {
   position: absolute;
   width: 100%;
@@ -53,18 +38,70 @@ ol {
   }
 }
 #about-us {
-  padding: 3% 0;
+  padding: 5% 0;
+  height: 100%;
   text-align: center;
   .about-us-text {
-    padding: 5% 10%;
+    padding: 10% 3%;
+    font-size: 0.875rem;
     text-align: left;
+    .trifecta_text {
+      font-size: 1.8rem;
+      .trifecta {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $main-color;
+      }
+    }
+    .about_us_btn{
+      background-color: $main-color;
+      color: $body-color;
+      font-weight: 600;
+    }
   }
   .about-us-photo {
-    padding: 5% 1%;
-    img {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
+    position: relative;
+    margin-left: -3%;
+    height: 100%;
+    .front {
+      position: absolute;
+      top: 44%;
+      left: 50%;
+      border: 10px solid $main-color;
+      border-radius: 50%;
+      z-index: 11;
+      .front_img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .middle {
+      position: absolute;
+      top: 3%;
+      left: 30%;
+      border: 10px solid $main-color;
+      border-radius: 50%;
+      .middle_img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .behind {
+      position: absolute;
+      top: 44%;
+      left: 10%;
+      border: 10px solid $main-color;
+      border-radius: 50%;
+      .behind_img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
     }
   }
 }

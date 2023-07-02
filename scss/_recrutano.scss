@@ -1,0 +1,60 @@
+@import "./variable.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#recrutment {
+  position: relative;
+  .work_process {
+    position: relative;
+    margin: 5% 0;
+    &::after {
+      content: "";
+      height: 100%;
+      position: absolute;
+      margin-right: 10px;
+      top: 0;
+      right: 50%;
+      width: 2px;
+      background-color: red;
+    }
+    .work_box {
+      .work_detail_left {
+        margin-left: 10%;
+        .work_number {
+          .one {
+            text-align: center;
+            margin-left: -45%;
+          }
+        }
+        .first {
+          height: 350px;
+          width: 350px;
+          object-fit: cover;
+        }
+      }
+      .work_right {
+        &::before {
+          position: absolute;
+          content: "";
+          height: 20px;
+          left: 627px;
+          width: 20px;
+          box-shadow: 0 0 0 1px #e6e6e6;
+          border-radius: 50%;
+          border: 4px solid #fff;
+          background-color: $main-color;
+          z-index: 1;
+        }
+        .one_second {
+          width: 350px;
+          height: 350px;
+          object-fit: cover;
+          margin-left: 25%;
+          margin-top: 4%;
+        }
+      }
+    }
+  }
+}
