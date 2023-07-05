@@ -1,34 +1,34 @@
-#srs {
+#csr {
   background-color: #e6e6e6;
   padding: 6% 0;
 }
-#srs .header {
+#csr .header {
   padding: 3% 0;
 }
-#srs .header h1 {
+#csr .header h1 {
   font-size: 3rem;
   color: #d1a840;
   text-align: center;
   padding: 3% 0;
   font-weight: 700;
 }
-#srs .header .intro h2 {
+#csr .header .intro h2 {
   color: #0c0f26;
   font-size: 2rem;
 }
-#srs .gallay-part .h2 {
+#csr .gallay-part .h2 {
   text-align: center;
   font-size: 2.1rem;
   padding: 3% 0;
   color: #d1a840;
 }
-#srs .gallay-part .card {
+#csr .gallay-part .card {
   margin-top: 5%;
 }
-#srs .gallay-part .card .zoomable-image {
+#csr .gallay-part .card .zoomable-image {
   transition: transform 0.3s ease;
 }
-#srs .gallay-part .card .zoomable-image:hover {
+#csr .gallay-part .card .zoomable-image:hover {
   transform: scale(1.1);
 }
 
@@ -443,6 +443,22 @@
   margin-top: 4%;
 }
 
+#timely_development {
+  padding: 3% 0;
+}
+#timely_development .timely_development_header {
+  font-size: 2rem;
+  padding: 3% 0;
+}
+
+#personalized_approach {
+  padding: 3% 0;
+}
+#personalized_approach .personalized_approach_header {
+  font-size: 2rem;
+  padding: 3% 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -452,6 +468,11 @@
 li,
 ol {
   list-style-type: none;
+}
+
+.title {
+  text-align: center;
+  color: #d1a840;
 }
 
 #navBar {
@@ -489,9 +510,11 @@ ol {
   padding: 10% 3%;
   font-size: 0.875rem;
   text-align: left;
+  color: #0c0f26;
 }
 #about-us .about-us-text .trifecta_text {
   font-size: 1.8rem;
+  color: #0c0f26;
 }
 #about-us .about-us-text .trifecta_text .trifecta {
   font-size: 1.8rem;
@@ -502,6 +525,10 @@ ol {
   background-color: #d1a840;
   color: #e6e6e6;
   font-weight: 600;
+  transition: all 0.3s;
+}
+#about-us .about-us-text .about_us_btn:hover {
+  background-color: #0c0f26;
 }
 #about-us .about-us-photo {
   position: relative;
@@ -555,19 +582,38 @@ ol {
 #why-us {
   padding: 3%;
 }
-#why-us .why-us-wrapper .why-us-heading {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 700;
+#why-us .why-us-wrapper .box-wrapper {
+  position: relative;
+  overflow: hidden;
 }
-#why-us .why-us-wrapper .box {
+#why-us .why-us-wrapper .box-wrapper .box {
   text-align: center;
   padding: 20% 0;
   border: 1px solid #eee;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
-#why-us .why-us-wrapper .box:hover {
+#why-us .why-us-wrapper .box-wrapper .box:hover {
   box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+}
+#why-us .why-us-wrapper .box-wrapper .box a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#why-us .why-us-wrapper .box-wrapper .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  transition: 0.4s;
+  border-radius: 10px;
+  left: 0;
+  background: linear-gradient(#d1a840, rgba(209, 168, 64, 0.42));
+  color: #e6e6e6;
+}
+#why-us .why-us-wrapper .box-wrapper:hover .overlay {
+  top: 0;
 }
 
 #achievementSection {
@@ -660,21 +706,40 @@ ol {
   color: #0c0f26;
 }
 
-.logogrid {
+#clients_view {
+  padding: 5% 0;
+}
+#clients_view .see_more_btn {
+  text-align: center;
+  padding-top: 3%;
+}
+#clients_view .see_more_btn .see_more_btn {
+  display: inline-block;
+  background: #d1a840;
+  color: #0c0f26;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.4s;
+  font-weight: 500;
+}
+#clients_view .see_more_btn .see_more_btn:hover {
+  background-color: #0B2A44;
+  color: #e6e6e6;
+}
+#clients_view .logogrid {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: 75px;
   grid-gap: 4rem;
 }
-
-.logogrid__item {
+#clients_view .logogrid .logogrid__item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.logogrid__img {
+#clients_view .logogrid .logogrid__item .logogrid__img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 120px;
@@ -682,11 +747,21 @@ ol {
   filter: grayscale(100%) contrast(25%);
   transition: filter 0.3s ease;
 }
-
-.logogrid__img:hover {
+#clients_view .logogrid .logogrid__item .logogrid__img:hover {
   filter: grayscale(0) contrast(100%);
 }
 
+#footer {
+  background-color: #0B2A44;
+  color: #e6e6e6;
+}
+#footer .social_link .social_links .social_icon {
+  font-size: 1.3rem;
+  transition: 0.04s;
+}
+#footer .social_link .social_links .social_icon:hover {
+  color: #d1a840;
+}
 #footer .decoration {
   text-decoration: none;
 }

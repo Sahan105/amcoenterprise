@@ -1,9 +1,11 @@
-@import "./_src.scss";
+@import "./csr.scss";
 @import "./recrutpro";
 @import "./variable.scss";
 @import "./service.scss";
 @import "./aboutus.scss";
 @import "./recrutano.scss";
+@import "./timelydev.scss";
+@import "./personalized_approach.scss";
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +15,10 @@ li,
 ol {
   list-style-type: none;
 }
-
+.title {
+  text-align: center;
+  color: $main-color;
+}
 #navBar {
   position: absolute;
   width: 100%;
@@ -45,18 +50,24 @@ ol {
     padding: 10% 3%;
     font-size: 0.875rem;
     text-align: left;
+    color: $text-color;
     .trifecta_text {
       font-size: 1.8rem;
+      color: $text-color;
       .trifecta {
         font-size: 1.8rem;
         font-weight: 700;
         color: $main-color;
       }
     }
-    .about_us_btn{
+    .about_us_btn {
       background-color: $main-color;
       color: $body-color;
       font-weight: 600;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $text-color;
+      }
     }
   }
   .about-us-photo {
@@ -108,20 +119,39 @@ ol {
 #why-us {
   padding: 3%;
   .why-us-wrapper {
-    .why-us-heading {
-      text-align: center;
-      font-family: "Courier New", Courier, monospace;
-      font-weight: 700;
-    }
-    .box {
-      text-align: center;
-      padding: 20% 0;
-      border: 1px solid #eee;
-      transition: transform 0.3s ease;
-      &:hover {
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-        -moz-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-        box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+    .box-wrapper {
+      position: relative;
+      overflow: hidden;
+      .box {
+        text-align: center;
+        padding: 20% 0;
+        border: 1px solid #eee;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        &:hover {
+          -webkit-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+          -moz-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+          box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 100%;
+        transition: 0.4s;
+        border-radius: 10px;
+        left: 0;
+        background: linear-gradient($main-color, rgba(209, 168, 64, 0.42));
+        color: $body-color;
+      }
+      &:hover .overlay {
+        top: 0;
       }
     }
   }
@@ -189,7 +219,6 @@ ol {
     padding: 7% 0;
   }
 }
-
 // service section start
 #service {
   background-color: $body-color;
@@ -224,27 +253,48 @@ ol {
 //service section end
 
 // Client side
-.logogrid {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-auto-rows: 75px;
-  grid-gap: 4rem;
-}
-.logogrid__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logogrid__img {
-  object-fit: cover;
-  max-width: 120px;
-  max-height: 60px;
-  filter: grayscale(100%) contrast(25%);
-  transition: filter 0.3s ease;
-}
-.logogrid__img:hover {
-  filter: grayscale(0) contrast(100%);
+#clients_view {
+  padding: 5% 0;
+  .see_more_btn {
+    text-align: center;
+    padding-top: 3%;
+    .see_more_btn {
+      display: inline-block;
+      background: $main-color;
+      color: $text-color;
+      padding: 0.5rem 0.8rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.4s;
+      font-weight: 500;
+      &:hover {
+        background-color: $footer-color;
+        color: $body-color;
+      }
+    }
+  }
+  .logogrid {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 75px;
+    grid-gap: 4rem;
+    .logogrid__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .logogrid__img {
+        object-fit: cover;
+        max-width: 120px;
+        max-height: 60px;
+        filter: grayscale(100%) contrast(25%);
+        transition: filter 0.3s ease;
+        &:hover {
+          filter: grayscale(0) contrast(100%);
+        }
+      }
+    }
+  }
 }
 
 // clients end
@@ -252,6 +302,19 @@ ol {
 // Footer section start
 
 #footer {
+  background-color: $footer-color;
+  color: $body-color;
+  .social_link {
+    .social_links {
+      .social_icon {
+        font-size: 1.3rem;
+        transition: 0.04s;
+        &:hover {
+         color: $main-color;
+        }
+      }
+    }
+  }
   .decoration {
     text-decoration: none;
   }
