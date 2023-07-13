@@ -1,0 +1,31 @@
+@import "./variable.scss";
+#terms_conditions {
+  .terms_condition_wrapper {
+    padding: 0 5%;
+    .title {
+      font-size: 2.5rem;
+      color: $footer-color;
+      font-weight: 700;
+      padding: 5% 0;
+    }
+    .top {
+      font-size: 1.5rem;
+      .amco {
+        color: $main-color;
+        font-weight: 700;
+      }
+    }
+    .bottom {
+      font-size: 1.3rem;
+    }
+    .box {
+      padding: 1% 0;
+      color: $text-color;
+      font-size: 1.2rem;
+      .heading {
+        color: $main-color;
+        font-weight: 700;
+      }
+    }
+  }
+}

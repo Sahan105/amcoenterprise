@@ -17,15 +17,19 @@
       top: 0;
       right: 50%;
       width: 2px;
-      background-color: red;
+      background-color: $body-color;
     }
     .work_box {
       .work_detail_left {
-        margin-left: 10%;
+        margin-left: 20%;
+        margin-top: 20%;
+        padding: 2%;
+        text-align: center;
         .work_number {
           .one {
             text-align: center;
-            margin-left: -45%;
+            margin-left: 0;
+            color: $main-color;
           }
         }
         .first {
@@ -53,6 +57,7 @@
           object-fit: cover;
           margin-left: 25%;
           margin-top: 4%;
+          border-radius: 50%;
         }
       }
     }

@@ -1,11 +1,12 @@
 @import "./csr.scss";
-@import "./recrutpro";
 @import "./variable.scss";
 @import "./service.scss";
 @import "./aboutus.scss";
 @import "./recrutano.scss";
 @import "./timelydev.scss";
 @import "./personalized_approach.scss";
+@import "./terms_condition.scss";
+@import "./company_profile.scss";
 * {
   padding: 0;
   margin: 0;
@@ -247,6 +248,21 @@ ol {
         }
       }
     }
+    .service_btn {
+      display: inline-block;
+      background: $main-color;
+      color: $text-color;
+      margin-top: 2rem;
+      padding: 0.5rem 0.8rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.4s;
+      font-weight: 500;
+      &:hover {
+        background-color: $footer-color;
+        color: $body-color;
+      }
+    }
   }
 }
 
@@ -310,7 +326,7 @@ ol {
         font-size: 1.3rem;
         transition: 0.04s;
         &:hover {
-         color: $main-color;
+          color: $main-color;
         }
       }
     }
