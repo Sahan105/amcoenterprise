@@ -1,0 +1,24 @@
+@import "./variable.scss";
+#clients {
+  overflow-x: hidden;
+  padding: 5% 0;
+  .main {
+    .link_tag {
+      &:hover {
+        overflow: hidden;
+      }
+    }
+  }
+  .main_content {
+    padding: 5% 0;
+    .home {
+      .nation {
+        .nation_img {
+          object-fit: cover;
+          max-width: 250px;
+          max-height: 120px;
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@
 @import "./personalized_approach.scss";
 @import "./terms_condition.scss";
 @import "./company_profile.scss";
+@import "./clients.scss";
 * {
   padding: 0;
   margin: 0;
@@ -62,12 +63,15 @@ ol {
       }
     }
     .about_us_btn {
+      display: inline-block;
+      margin-top: 5%;
       background-color: $main-color;
       color: $body-color;
       font-weight: 600;
       transition: all 0.3s;
       &:hover {
-        background-color: $text-color;
+        background-color: $footer-color;
+        color: #fff;
       }
     }
   }
@@ -129,15 +133,15 @@ ol {
         border: 1px solid #eee;
         transition: transform 0.3s ease;
         border-radius: 10px;
-        &:hover {
-          -webkit-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-          -moz-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-          box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-        }
+        position: relative;
         a {
+          position: absolute;
           text-decoration: none;
           font-size: 1.5rem;
           font-weight: 600;
+          top: 35%;
+          left: 18%;
+          z-index: 11;
         }
       }
       .overlay {
@@ -148,8 +152,7 @@ ol {
         transition: 0.4s;
         border-radius: 10px;
         left: 0;
-        background: linear-gradient($main-color, rgba(209, 168, 64, 0.42));
-        color: $body-color;
+        background: $main-color;
       }
       &:hover .overlay {
         top: 0;
@@ -188,6 +191,16 @@ ol {
   padding: 5% 0;
   .meet-our-boss-heading {
     padding: 5% 0;
+    .team_btn {
+      display: inline-block;
+      margin-top: 4%;
+      background-color: $main-color;
+      transition: 0.4s;
+      &:hover {
+        background-color: $footer-color;
+        color: #fff;
+      }
+    }
   }
   .meet-our-boss-photo {
     img {
@@ -320,6 +333,7 @@ ol {
 #footer {
   background-color: $footer-color;
   color: $body-color;
+  padding: 5% 0;
   .social_link {
     .social_links {
       .social_icon {
