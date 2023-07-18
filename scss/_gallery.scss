@@ -1,0 +1,13 @@
+@import "./variable.scss";
+#gallery {
+  text-align: center;
+  h2 {
+    padding: 5% 0;
+  }
+  .zoomable-image {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

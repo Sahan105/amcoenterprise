@@ -2,13 +2,28 @@
 #aboutus {
   padding: 5% 0;
   .director {
+    padding: 5% 0;
     .name-speach {
       text-align: left;
+      .director_name {
+        color: $main-color;
+        font-family: $opensun;
+        font-weight: 600;
+      }
+      .director_mgs_text {
+        p {
+          font-family: $para_fonts;
+          color: $footer-color;
+        }
+      }
     }
-    .photo {
-      margin-top: 5%;
-      .d-photo {
+    .director_photo_section{
+      margin: 5% 0 0 17%;
+
+      .director_photo {
         object-fit: cover;
+        position: relative;
+        z-index: 11;
       }
     }
   }

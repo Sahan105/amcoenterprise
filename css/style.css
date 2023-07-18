@@ -66,15 +66,29 @@
 #aboutus {
   padding: 5% 0;
 }
+#aboutus .director {
+  padding: 5% 0;
+}
 #aboutus .director .name-speach {
   text-align: left;
 }
-#aboutus .director .photo {
-  margin-top: 5%;
+#aboutus .director .name-speach .director_name {
+  color: #d1a840;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
-#aboutus .director .photo .d-photo {
+#aboutus .director .name-speach .director_mgs_text p {
+  font-family: "Lato", sans-serif;
+  color: #0b2a44;
+}
+#aboutus .director .director_photo_section {
+  margin: 5% 0 0 17%;
+}
+#aboutus .director .director_photo_section .director_photo {
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
+  z-index: 11;
 }
 #aboutus .whole-team {
   height: 100vh; /* Adjust the height as needed */
@@ -281,7 +295,7 @@
 }
 #terms_conditions .terms_condition_wrapper .title {
   font-size: 2.5rem;
-  color: #0B2A44;
+  color: #0b2a44;
   font-weight: 700;
   padding: 5% 0;
 }
@@ -332,6 +346,19 @@
   max-height: 120px;
 }
 
+#gallery {
+  text-align: center;
+}
+#gallery h2 {
+  padding: 5% 0;
+}
+#gallery .zoomable-image {
+  transition: transform 0.3s ease;
+}
+#gallery .zoomable-image:hover {
+  transform: scale(1.1);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -346,6 +373,8 @@ ol {
 .title {
   text-align: center;
   color: #d1a840;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
 }
 
 #navBar {
@@ -353,27 +382,50 @@ ol {
   width: 100%;
   z-index: 11;
 }
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+#navBar .logo {
+  font-weight: 500;
 }
 
+.display_icon .brochure_btn {
+  display: none;
+}
+
+#banner {
+  padding: 5% 0;
+}
+#banner .banner-wrapper .banner_text_part .banner_main_text {
+  margin-top: 15%;
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  line-height: 1.7;
+  font-weight: 700;
+}
+#banner .banner-wrapper .banner_text_part .banner_main_text .company_name {
+  color: #d1a840;
+}
+#banner .banner-wrapper .banner_logo_part .main_logo {
+  margin-left: 2%;
+  margin-top: 10%;
+  width: 350px;
+  height: 350px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .main_logo {
+    animation: main_logo infinite 3s ease-in-out;
+  }
+}
+@keyframes main_logo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 #about-us {
   padding: 5% 0;
   height: 100%;
@@ -403,7 +455,7 @@ ol {
   transition: all 0.3s;
 }
 #about-us .about-us-text .about_us_btn:hover {
-  background-color: #0B2A44;
+  background-color: #0b2a44;
   color: #fff;
 }
 #about-us .about-us-photo {
@@ -494,7 +546,7 @@ ol {
 }
 
 #achievementSection {
-  background: url("../image/2.jpg");
+  background: url("../image/2.webp");
   background-attachment: fixed;
   background-size: cover;
   color: #e6e6e6;
@@ -520,11 +572,20 @@ ol {
   padding: 5% 0;
 }
 #meet-our-boss .temaHeading {
+  padding: 5% 0;
   text-align: center;
   color: #d1a840;
 }
 #meet-our-boss .meet-our-boss-heading {
   padding: 5% 0;
+}
+#meet-our-boss .meet-our-boss-heading .meet-our-boss-heading_title {
+  text-align: left;
+  color: #0b2a44;
+}
+#meet-our-boss .meet-our-boss-heading .meet-our-boss-heading_text {
+  margin-top: 7%;
+  padding-right: 15%;
 }
 #meet-our-boss .meet-our-boss-heading .team_btn {
   display: inline-block;
@@ -533,27 +594,17 @@ ol {
   transition: 0.4s;
 }
 #meet-our-boss .meet-our-boss-heading .team_btn:hover {
-  background-color: #0B2A44;
+  background-color: #0b2a44;
   color: #fff;
+}
+#meet-our-boss .meet-our-boss-photo {
+  padding: 5% 0;
 }
 #meet-our-boss .meet-our-boss-photo img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 500px;
-}
-
-#gallary {
-  text-align: center;
-}
-#gallary h2 {
-  padding: 5% 0;
-}
-#gallary .zoomable-image {
-  transition: transform 0.3s ease;
-}
-#gallary .zoomable-image:hover {
-  transform: scale(1.2);
 }
 
 #contact {
@@ -604,7 +655,7 @@ ol {
   font-weight: 500;
 }
 #service .service-wrapper .service_btn:hover {
-  background-color: #0B2A44;
+  background-color: #0b2a44;
   color: #e6e6e6;
 }
 
@@ -626,7 +677,7 @@ ol {
   font-weight: 500;
 }
 #clients_view .see_more_btn .see_more_btn:hover {
-  background-color: #0B2A44;
+  background-color: #0b2a44;
   color: #e6e6e6;
 }
 #clients_view .logogrid {
@@ -654,7 +705,7 @@ ol {
 }
 
 #footer {
-  background-color: #0B2A44;
+  background-color: #0b2a44;
   color: #e6e6e6;
   padding: 5% 0;
 }
