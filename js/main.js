@@ -54,4 +54,21 @@ for (i = 0; i < btns.length; i++) {
     });
   });
 }
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector(".navbar");
+
+  var bannerHeight = document.querySelector("#banner").offsetHeight;
+
+  function toggleNavbarBackground() {
+    if (window.scrollY >= bannerHeight) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  }
+
+  toggleNavbarBackground();
+
+  window.addEventListener("scroll", toggleNavbarBackground);
+});

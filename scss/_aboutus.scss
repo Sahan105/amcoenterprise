@@ -17,7 +17,7 @@
         }
       }
     }
-    .director_photo_section{
+    .director_photo_section {
       margin: 5% 0 0 17%;
 
       .director_photo {
@@ -25,6 +25,12 @@
         position: relative;
         z-index: 11;
       }
+    }
+  }
+  .sister_concern {
+    .sister_concern_img {
+      width: 100%;
+      height: 100%;
     }
   }
   .whole-team {
@@ -57,11 +63,11 @@
     }
   }
 
-  #cheif {
+  #administration_team {
     background-color: #eee;
-    padding-bottom: 3%;
+    padding: 3% 0;
 
-    .cheif-h {
+    .administration_team_header {
       padding-top: 2%;
       padding-bottom: 7%;
       text-align: center;
@@ -69,7 +75,7 @@
     }
 
     .box {
-      font-family: "Raleway", sans-serif;
+      font-family:$opensun;
       position: relative;
 
       &:before {
@@ -114,13 +120,13 @@
       }
 
       .title {
-        color: #111;
-        font-size: 2rem;
+        color: $text-color;
+        font-size: 1.8rem;
         font-weight: 600;
         letter-spacing: 0.5px;
         text-transform: capitalize;
         margin: 0 0 5px;
-        font-family: "Courgette", cursive;
+      font-family: $opensun;
       }
 
       .post {

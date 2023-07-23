@@ -11,7 +11,25 @@
   }
   .main_content {
     padding: 5% 0;
-    .home {
+    .saudi_arab {
+      .nation {
+        .nation_img {
+          object-fit: cover;
+          max-width: 250px;
+          max-height: 120px;
+        }
+      }
+    }
+    .UAE {
+      .nation {
+        .nation_img {
+          object-fit: cover;
+          max-width: 250px;
+          max-height: 120px;
+        }
+      }
+    }
+    .qatar {
       .nation {
         .nation_img {
           object-fit: cover;

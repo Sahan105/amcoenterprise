@@ -39,27 +39,29 @@
   <body>
     <div class="display_icon">
       <ul>
-        <li>
+        <li class="brochure_btn_part">
           <a href="#" class="text-decoration-none text-reset brochure_btn"
             >Brochure</a
           >
           <span> <i class="fa-solid fa-list brochure-icon"></i></span>
         </li>
-        <li>
-          <a href="#" class="text-decoration-none text-reset"> </a>
-          <span> <i class="fa-brands fa-whatsapp"></i></span>
+        <li class="whatsapp_btn_part">
+          <a href="#" class="text-decoration-none text-reset whatsapp_btn"
+            >whatsapp</a
+          >
+          <span> <i class="fa-brands fa-whatsapp whatsapp_btn_icon"></i></span>
         </li>
       </ul>
     </div>
     <!-- navbar start -->
     <section id="navBar">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a class="navbar-brand text-reset logo" href="#"
             >Amco Enterprise Limited</a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler responsive_btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -67,7 +69,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars btn_bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -91,25 +93,6 @@
               <li class="nav-item">
                 <a class="nav-link text-reset" href="#">Gallary</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-reset"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
@@ -121,13 +104,43 @@
           <div class="row">
             <div class="col-lg-8">
               <div class="banner_text_part">
-                <h1 class="banner_main_text">
-                  Unlock Your Workforce Potential with
-                  <br />
-                  <span class="company_name">Amco Enterprise Limited -</span>
-                  <br />
-                  Your Trusted Recruitment Partner
-                </h1>
+                <div class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="20000">
+                      <h1 class="banner_main_text">
+                        Unlock Your Workforce Potential with
+                        <br />
+                        <span class="company_name"
+                          >Amco Enterprise Limited -</span
+                        >
+                        <br />
+                        Your Trusted Recruitment Partner
+                      </h1>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="20000">
+                      <h1 class="banner_main_text">
+                        Your Reliable Workforce Solutions
+                        <br />
+                        Your Competitive Edge
+                        <br />
+                        <span class="company_name"
+                          >Amco Enterprise Limited</span
+                        >
+                      </h1>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="20000">
+                      <h1 class="banner_main_text">
+                        Where Talent Meets Opportunity
+                        <br />
+                        Where Success Begins
+                        <br />
+                        <span class="company_name"
+                          >Amco Enterprise Limited</span
+                        >
+                      </h1>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4">
@@ -185,18 +198,18 @@
             <div class="about-us-photo">
               <div class="front">
                 <picture>
-                  <img src="./image/1.jpg" alt="" class="front_img" />
+                  <img src="./image/about_us/fahad.webp" alt="" class="front_img" />
                 </picture>
               </div>
               <div class="middle">
                 <picture>
-                  <img src="./image/2.jpg" alt="" class="middle_img" />
+                  <img src="./image/about_us/boss.webp" alt="" class="middle_img" />
                 </picture>
               </div>
 
               <div class="behind">
                 <picture>
-                  <img src="./image/3.jpg" alt="" class="behind_img" />
+                  <img src="./image/about_us/faruk.webp" alt="" class="behind_img" />
                 </picture>
               </div>
             </div>
@@ -557,8 +570,7 @@
         </div>
 
         <div
-          class="text-center p-4"
-          style="background-color: rgba(0, 0, 0, 0.05)"
+          class="text-center"
         >
           © 2023 Copyright:
           <a
@@ -579,22 +591,5 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Initialize Swiper -->
-    <!-- <script>
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script> -->
   </body>
 </html>

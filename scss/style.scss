@@ -25,23 +25,78 @@ ol {
   font-size: 1.2rem;
 }
 #navBar {
-  position: absolute;
-  width: 100%;
-  z-index: 11;
-  .logo{
-  font-weight: 500;
+  padding: 3% 0;
+  background-color: $footer-color;
+  color: #fff;
+  .scrolled {
+    background-color: $footer-color; /* Update this color as per your design */
+  }
+  .responsive_btn {
+    &:focus {
+      color: #fff;
+    }
+    .btn_bars {
+      color: #fff;
+    }
+    .logo {
+      font-weight: 500;
+    }
   }
 }
+
 .display_icon {
-  .brochure_btn {
-    display: none;
+  position: absolute;
+  z-index: 11;
+  color: #ffff;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  right: 0;
+  /* Transition */
+  transition: all 0.3s ease;
+  .brochure_btn_part {
+    background-color: $main-color;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    /* Added to hide overflowing content */
+    .brochure_btn {
+      display: none;
+    }
+  }
+
+  .whatsapp_btn_part {
+    background-color: $main-color;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    .whatsapp_btn {
+      display: none;
+    }
+  }
+  transition: all 0.3s ease;
+  &:hover {
+    .brochure_btn_part {
+      width: 100%;
+    }
+    .brochure_btn {
+      display: inline-block;
+    }
+    .whatsapp_btn_part {
+      width: 100%;
+    }
+    .whatsapp_btn {
+      display: inline-block;
+    }
   }
 }
 
 // Banner section start
 
 #banner {
-  padding: 5% 0;
+  padding: 0 0 10% 0;
+  height: 100vh;
+  background-color: $footer-color;
+  color: #ffff;
   .banner-wrapper {
     .banner_text_part {
       .banner_main_text {
@@ -50,7 +105,7 @@ ol {
         font-size: 2.8rem;
         line-height: 1.7;
         font-weight: 700;
-        .company_name{
+        .company_name {
           color: $main-color;
         }
       }
@@ -58,7 +113,7 @@ ol {
     .banner_logo_part {
       .main_logo {
         margin-left: 2%;
-        margin-top: 10%;
+        margin-top: 20%;
         width: 350px;
         height: 350px;
       }
@@ -90,7 +145,7 @@ ol {
   text-align: center;
   .about-us-text {
     padding: 10% 3%;
-    font-size: 0.875rem;
+    font-size:1rem;
     text-align: left;
     color: $text-color;
     .trifecta_text {
@@ -104,7 +159,7 @@ ol {
     }
     .about_us_btn {
       display: inline-block;
-      margin-top: 5%;
+      margin-top: 3%;
       background-color: $main-color;
       color: $body-color;
       font-weight: 600;
@@ -135,7 +190,7 @@ ol {
     }
     .middle {
       position: absolute;
-      top: 3%;
+      top: 8%;
       left: 30%;
       border: 10px solid $main-color;
       border-radius: 50%;
@@ -202,7 +257,7 @@ ol {
 }
 #achievementSection {
   // background-color: #0f1923; /* Dark Blue */
-  background: url("../image/2.webp");
+  background: $footer-color;
   background-attachment: fixed;
   background-size: cover;
   color: $body-color;
