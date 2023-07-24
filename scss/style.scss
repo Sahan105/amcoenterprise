@@ -9,6 +9,7 @@
 @import "./company_profile.scss";
 @import "./clients.scss";
 @import "./gallery.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -24,10 +25,19 @@ ol {
   font-family: $title_fonts;
   font-size: 1.2rem;
 }
+#top_contact {
+  background-color: $body-color;
+}
 #navBar {
-  padding: 3% 0;
+  padding: 1% 0;
   background-color: $footer-color;
   color: #fff;
+  .navbar-nav {
+    .nav-link {
+      margin-right: 20px;
+    }
+  }
+
   .scrolled {
     background-color: $footer-color; /* Update this color as per your design */
   }
@@ -95,49 +105,36 @@ ol {
 #banner {
   padding: 0 0 10% 0;
   height: 100vh;
-  background-color: $footer-color;
   color: #ffff;
   .banner-wrapper {
-    .banner_text_part {
+    position: relative;
+    .slider_img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 10px 20px;
       .banner_main_text {
-        margin-top: 15%;
+        position: absolute;
+        top: -50%;
         font-family: $para_fonts;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         line-height: 1.7;
         font-weight: 700;
+        text-align: left;
         .company_name {
           color: $main-color;
         }
       }
     }
-    .banner_logo_part {
-      .main_logo {
-        margin-left: 2%;
-        margin-top: 20%;
-        width: 350px;
-        height: 350px;
-      }
-    }
   }
 }
-// main logo animation
-@media (prefers-reduced-motion: no-preference) {
-  .main_logo {
-    animation: main_logo infinite 3s ease-in-out;
-  }
-}
-@keyframes main_logo {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-// main logo animation
 //Banner section end
 #about-us {
   padding: 5% 0;
@@ -145,7 +142,7 @@ ol {
   text-align: center;
   .about-us-text {
     padding: 10% 3%;
-    font-size:1rem;
+    font-size: 1rem;
     text-align: left;
     color: $text-color;
     .trifecta_text {
@@ -256,7 +253,6 @@ ol {
   }
 }
 #achievementSection {
-  // background-color: #0f1923; /* Dark Blue */
   background: $footer-color;
   background-attachment: fixed;
   background-size: cover;
@@ -278,8 +274,64 @@ ol {
     }
   }
 }
-#meet-our-boss {
+// employee section get in touch start
+#employer_employee {
+  background-color: $body-color;
+  color: $text-color;
   padding: 5% 0;
+
+  .employer_employee_wrapper {
+    padding: 0 7%;
+    .employer_employee_title {
+      text-align: center;
+      padding: 3% 0;
+    }
+    .center_btn {
+      display: flex;
+      justify-content: center;
+      .nav-pills {
+        .nav-link {
+          color: #ffffff;
+          &.active,
+          &.show {
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+    .employer_text {
+      padding: 0 5%;
+    }
+    .employer_information {
+      .employer_btn {
+        background-color: $main-color;
+        transform: 0.4s;
+        &:hover {
+          background-color: $footer-color;
+          color: #fff;
+        }
+      }
+      padding: 3% 5%;
+    }
+    .employee_text {
+      padding: 0 5%;
+    }
+    .employee_information {
+      padding: 3% 5%;
+      .employee_btn {
+        background-color: $main-color;
+        transform: 0.4s;
+        &:hover {
+          background-color: $footer-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// employee section get in touch end
+#meet-our-boss {
+  padding: 5% 0 3% 0;
   .temaHeading {
     padding: 5% 0;
     text-align: center;
@@ -317,8 +369,108 @@ ol {
   }
 }
 // Gally start
+//testimonial start
+#testimonials {
+  padding: 3% 0;
+  background-color: rgb(251, 250, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  .testimonials_title {
+    text-align: center;
+    font-weight: 700;
+    padding: 3% 0 0 0;
+  }
+  .testimonials-container {
+    background-color: $footer-color;
+    border-radius: 15px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    margin: 20px auto;
+    max-width: 768px;
+    padding: 50px 80px;
+    position: relative;
+
+    .fa-quote {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 28px;
+      position: absolute;
+      top: 70px;
+    }
+
+    .fa-quote-right {
+      left: 40px;
+    }
+
+    .fa-quote-left {
+      right: 40px;
+    }
+
+    .testimonial {
+      line-height: 28px;
+      text-align: justify;
+    }
+
+    .centered-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      border-radius: 50%;
+      height: 75px;
+      width: 75px;
+      object-fit: cover;
+    }
+
+    .user-details {
+      margin-left: 10px;
+    }
+
+    .username {
+      margin: 0;
+    }
+
+    .role {
+      font-weight: normal;
+      margin: 2px 0;
+    }
+
+    .progress-bar {
+      background-color: #fff;
+      height: 4px;
+      width: 100%;
+      animation: grow 10s linear infinite;
+      transform-origin: left;
+    }
+
+    @keyframes grow {
+      0% {
+        transform: scaleX(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-container {
+        padding: 20px 30px;
+      }
+
+      .fa-quote {
+        display: none;
+      }
+    }
+  }
+}
+//testimonial end
 
 #contact {
+  .contact_title {
+    text-align: center;
+    color: $text-color;
+    padding: 0 0 3% 0;
+  }
   padding: 3% 0;
   text-align: left;
   .map {
@@ -326,6 +478,14 @@ ol {
   }
   .form-wrapper {
     padding: 7% 0;
+    .contact_btn {
+      background-color: $main-color;
+      transition: 0.4s;
+      &:hover {
+        background-color: $footer-color;
+        color: #fff;
+      }
+    }
   }
 }
 // service section start
@@ -378,43 +538,36 @@ ol {
 
 // Client side
 #clients_view {
-  padding: 5% 0;
-  .see_more_btn {
-    text-align: center;
-    padding-top: 3%;
-    .see_more_btn {
-      display: inline-block;
-      background: $main-color;
+  .clients_view_wrapper {
+    padding: 5% 0;
+    .clients_view_title {
+      text-align: center;
+      font-weight: 700;
       color: $text-color;
-      padding: 0.5rem 0.8rem;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: 0.4s;
-      font-weight: 500;
-      &:hover {
-        background-color: $footer-color;
-        color: $body-color;
+      padding: 0 0 5% 0;
+    }
+    .nation {
+      .nation_img {
+        object-fit: cover;
+        max-width: 250px;
+        max-height: 120px;
       }
     }
-  }
-  .logogrid {
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-auto-rows: 75px;
-    grid-gap: 4rem;
-    .logogrid__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .logogrid__img {
-        object-fit: cover;
-        max-width: 120px;
-        max-height: 60px;
-        filter: grayscale(100%) contrast(25%);
-        transition: filter 0.3s ease;
+    .see_more_btn {
+      text-align: center;
+      padding-top: 3%;
+      .see_more_btn {
+        display: inline-block;
+        background: $main-color;
+        color: $text-color;
+        padding: 0.5rem 0.8rem;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: 0.4s;
+        font-weight: 500;
         &:hover {
-          filter: grayscale(0) contrast(100%);
+          background-color: $footer-color;
+          color: $body-color;
         }
       }
     }
