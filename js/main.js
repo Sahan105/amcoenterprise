@@ -55,23 +55,6 @@ for (i = 0; i < btns.length; i++) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  var navbar = document.querySelector(".navbar");
-
-  var bannerHeight = document.querySelector("#banner").offsetHeight;
-
-  function toggleNavbarBackground() {
-    if (window.scrollY >= bannerHeight) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  }
-
-  toggleNavbarBackground();
-
-  window.addEventListener("scroll", toggleNavbarBackground);
-});
 //testimonial code start
 
 const testimonialsContainer = document.querySelector(".testimonials-container");
@@ -142,5 +125,27 @@ function updateTestimonial() {
   }
 }
 
-setInterval(updateTestimonial, 10000);
+setInterval(updateTestimonial, 2000);
 //testimonial code end
+// disappera contact section start code
+
+// Get the contact section element
+const contactSection = document.querySelector("#top_contact");
+
+// Function to handle the scroll event
+function handleScroll() {
+  const scrollY = window.scrollY;
+
+  // Check if the user has scrolled past the contact section
+  if (scrollY >= contactSection.offsetHeight) {
+    // If scrolled past, add a class to hide the contact section
+    contactSection.classList.add("hidden");
+  } else {
+    // If not scrolled past, remove the class to show the contact section
+    contactSection.classList.remove("hidden");
+  }
+}
+
+// Add the scroll event listener to the window
+window.addEventListener("scroll", handleScroll);
+// disapear conact section code end

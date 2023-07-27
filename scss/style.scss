@@ -30,16 +30,30 @@ ol {
 }
 #navBar {
   padding: 1% 0;
-  background-color: $footer-color;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: $focused-color;
   color: #fff;
+  border-bottom: 1px solid #fff;
   .navbar-nav {
     .nav-link {
+      position: relative;
       margin-right: 20px;
+      transition: 0.4s ease;
+      &:hover::after {
+        content: "";
+        position: absolute;
+        bottom: -1px; /* Adjust the distance of the border from the text (you can change this value as needed) */
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid #fff;
+      }
     }
   }
 
   .scrolled {
-    background-color: $footer-color; /* Update this color as per your design */
+    background-color: $focused-color; /* Update this color as per your design */
   }
   .responsive_btn {
     &:focus {
@@ -103,33 +117,53 @@ ol {
 // Banner section start
 
 #banner {
-  padding: 0 0 10% 0;
-  height: 100vh;
   color: #ffff;
   .banner-wrapper {
-    position: relative;
-    .slider_img {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
+    .carousel-indicators {
+      li {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        margin: 0 6px;
+        background-color: #ffff;
+      }
+      .active {
+        background-color: $main-color;
+      }
     }
-    .carousel-caption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      padding: 10px 20px;
-      .banner_main_text {
-        position: absolute;
-        top: -50%;
-        font-family: $para_fonts;
-        font-size: 2.5rem;
-        line-height: 1.7;
-        font-weight: 700;
-        text-align: left;
-        .company_name {
-          color: $main-color;
+
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+        position: relative;
+        .carousel-caption {
+          width: 100%;
+          position: absolute;
+          bottom: 60%;
+          left: 50%;
+          transform: translate(-50%, 60%);
+          .banner_main_text {
+            position: relative;
+            font-family: $para_fonts;
+            font-size: 3rem;
+            line-height: 1.7;
+            font-weight: 700;
+            text-align: left;
+            left: 20%;
+            .company_name {
+              color: $main-color;
+            }
+          }
+          h3 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -137,6 +171,8 @@ ol {
 }
 //Banner section end
 #about-us {
+  background: url("../image/Untitled\ design\ \(5\).png");
+  background-attachment: fixed;
   padding: 5% 0;
   height: 100%;
   text-align: center;
@@ -144,10 +180,10 @@ ol {
     padding: 10% 3%;
     font-size: 1rem;
     text-align: left;
-    color: $text-color;
+    color: $focused-color;
     .trifecta_text {
       font-size: 1.8rem;
-      color: $text-color;
+      color: $focused-color;
       .trifecta {
         font-size: 1.8rem;
         font-weight: 700;
@@ -162,7 +198,7 @@ ol {
       font-weight: 600;
       transition: all 0.3s;
       &:hover {
-        background-color: $footer-color;
+        background-color: $focused-color;
         color: #fff;
       }
     }
@@ -214,24 +250,38 @@ ol {
   }
 }
 #why-us {
-  padding: 3%;
+  padding-bottom: 3%;
   .why-us-wrapper {
     .box-wrapper {
       position: relative;
       overflow: hidden;
+      border-radius: 10px;
+      -webkit-box-shadow: 0px 0px 22px -7px rgba(11, 42, 68, 1);
+      -moz-box-shadow: 0px 0px 22px -7px rgba(11, 42, 68, 1);
+      box-shadow: 0px 0px 22px -7px rgba(11, 42, 68, 1);
       .box {
         text-align: center;
-        padding: 20% 0;
+        padding: 30% 0;
         border: 1px solid #eee;
         transition: transform 0.3s ease;
         border-radius: 10px;
         position: relative;
+        border-bottom: 10px solid $main-color;
+
+        .icon {
+          position: absolute;
+          font-size: 3rem;
+          font-weight: 600;
+          top: 15%;
+          left: 44%;
+          z-index: 11;
+        }
         a {
           position: absolute;
           text-decoration: none;
           font-size: 1.5rem;
           font-weight: 600;
-          top: 35%;
+          top: 40%;
           left: 18%;
           z-index: 11;
         }
@@ -244,7 +294,10 @@ ol {
         transition: 0.4s;
         border-radius: 10px;
         left: 0;
-        background: $main-color;
+        background: $semimain-color;
+      }
+      &:hover {
+        color: #ffff;
       }
       &:hover .overlay {
         top: 0;
@@ -252,11 +305,68 @@ ol {
     }
   }
 }
+// service section start
+#service {
+  background-color: $body-color;
+  padding: 5% 0;
+  .service-wrapper {
+    .left {
+      padding: 1%;
+      .box {
+        padding: 3%;
+        border: 1px solid #0000000d;
+        margin-top: 5px;
+        transition: transform 0.3s ease;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+        box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
+        transition: 0.4s;
+        &:hover {
+          background-color: $focused-color;
+        }
+        &:hover p {
+          color: #ffff;
+        }
+        .icon {
+          font-size: 2rem;
+          color: $main-color;
+        }
+        .p {
+          font-size: 1.3rem;
+          color: $focused-color;
+        }
+      }
+    }
+    .right {
+      .right_img {
+        width: 650px;
+        height: 700px;
+      }
+    }
+    .service_btn {
+      display: inline-block;
+      background: $main-color;
+      color: $focused-color;
+      margin-top: 2rem;
+      padding: 0.5rem 0.8rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.4s;
+      font-weight: 500;
+      &:hover {
+        background-color: $focused-color;
+        color: $body-color;
+      }
+    }
+  }
+}
+
+//service section end
 #achievementSection {
-  background: $footer-color;
+  background: $focused-color;
   background-attachment: fixed;
   background-size: cover;
-  color: $body-color;
+  color: #fff;
   text-align: center;
   padding: 5% 0;
   width: 100%;
@@ -267,7 +377,7 @@ ol {
     }
     i {
       font-size: 3rem;
-      color: $main-color;
+      color: #fff;
     }
     .counter {
       font-size: 3rem;
@@ -277,7 +387,7 @@ ol {
 // employee section get in touch start
 #employer_employee {
   background-color: $body-color;
-  color: $text-color;
+  color: $focused-color;
   padding: 5% 0;
 
   .employer_employee_wrapper {
@@ -307,7 +417,7 @@ ol {
         background-color: $main-color;
         transform: 0.4s;
         &:hover {
-          background-color: $footer-color;
+          background-color: $focused-color;
           color: #fff;
         }
       }
@@ -322,7 +432,7 @@ ol {
         background-color: $main-color;
         transform: 0.4s;
         &:hover {
-          background-color: $footer-color;
+          background-color: $focused-color;
           color: #fff;
         }
       }
@@ -342,7 +452,7 @@ ol {
     padding: 5% 0;
     .meet-our-boss-heading_title {
       text-align: left;
-      color: $footer-color;
+      color: $focused-color;
     }
     .meet-our-boss-heading_text {
       margin-top: 7%;
@@ -354,7 +464,7 @@ ol {
       background-color: $main-color;
       transition: 0.4s;
       &:hover {
-        background-color: $footer-color;
+        background-color: $focused-color;
         color: #fff;
       }
     }
@@ -383,7 +493,7 @@ ol {
     padding: 3% 0 0 0;
   }
   .testimonials-container {
-    background-color: $footer-color;
+    background-color: $focused-color;
     border-radius: 15px;
     color: #ffffff;
     font-family: "Montserrat";
@@ -468,7 +578,7 @@ ol {
 #contact {
   .contact_title {
     text-align: center;
-    color: $text-color;
+    color: $focused-color;
     padding: 0 0 3% 0;
   }
   padding: 3% 0;
@@ -482,59 +592,12 @@ ol {
       background-color: $main-color;
       transition: 0.4s;
       &:hover {
-        background-color: $footer-color;
+        background-color: $focused-color;
         color: #fff;
       }
     }
   }
 }
-// service section start
-#service {
-  background-color: $body-color;
-  padding: 5% 0;
-  .service-wrapper {
-    .left {
-      padding: 1%;
-      .box {
-        padding: 3%;
-        border: 1px solid #0000000d;
-        margin-top: 5px;
-        transition: transform 0.3s ease;
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-        -moz-box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-        box-shadow: 0px 0px 15px 0px rgba(208, 208, 208, 0.75);
-        &:hover {
-          transform: translateY(-6%);
-        }
-        .icon {
-          font-size: 2rem;
-          color: $main-color;
-        }
-        .p {
-          font-size: 1.3rem;
-          color: $text-color;
-        }
-      }
-    }
-    .service_btn {
-      display: inline-block;
-      background: $main-color;
-      color: $text-color;
-      margin-top: 2rem;
-      padding: 0.5rem 0.8rem;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: 0.4s;
-      font-weight: 500;
-      &:hover {
-        background-color: $footer-color;
-        color: $body-color;
-      }
-    }
-  }
-}
-
-//service section end
 
 // Client side
 #clients_view {
@@ -543,7 +606,7 @@ ol {
     .clients_view_title {
       text-align: center;
       font-weight: 700;
-      color: $text-color;
+      color: $focused-color;
       padding: 0 0 5% 0;
     }
     .nation {
@@ -559,14 +622,14 @@ ol {
       .see_more_btn {
         display: inline-block;
         background: $main-color;
-        color: $text-color;
+        color: $focused-color;
         padding: 0.5rem 0.8rem;
         text-decoration: none;
         font-size: 1rem;
         transition: 0.4s;
         font-weight: 500;
         &:hover {
-          background-color: $footer-color;
+          background-color: $focused-color;
           color: $body-color;
         }
       }
@@ -579,8 +642,8 @@ ol {
 // Footer section start
 
 #footer {
-  background-color: $footer-color;
-  color: $body-color;
+  background-color: $focused-color;
+  color: #fff;
   padding: 5% 0;
   .social_link {
     .social_links {
